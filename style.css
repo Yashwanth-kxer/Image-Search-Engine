@@ -117,5 +117,19 @@ display: none;
     font-weight: 300;
 }
 
+@media only screen and (max-width: 600px) {
+
+    form input{
+              
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    
+    #search-result img{
+        height: 130px;
+    }
+    
+}
 
 
