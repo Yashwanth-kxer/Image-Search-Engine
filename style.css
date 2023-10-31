@@ -15,6 +15,7 @@ body::-webkit-scrollbar {
   }
 
 h1{
+    font-size: 45px;
     text-align: center;
     margin: 100px auto 50px;
     font-weight: 600;
@@ -101,9 +102,7 @@ display: none;
 }
 
 #credit{
-    /* align-items: baseline; */
-    
-
+      
     position: fixed;
     bottom: 0;
     left: 0;
@@ -119,17 +118,43 @@ display: none;
 
 @media only screen and (max-width: 600px) {
 
+    h1{
+        /* width: 70%; */
+        font-size: 24px;
+        margin: 60px auto 40px;
+        font-weight: 500;
+        /* padding: 10px; */
+    }
+    form{
+        /* width: 70%; */
+        max-width: 300px;
+        height: 50px;
+    }
+    
     form input{
-              
-        font-size: 15px;
-        padding: 0 10px;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    ::placeholder{
+        font-size: 14px;
     }
 
+    form button{
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    #search-result {
+        /* width: 70%; */
+        margin: 30px auto 20px;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
     
     #search-result img{
-        height: 130px;
+        height: 200px;
+        width: 100%;
     }
     
 }
-
 
